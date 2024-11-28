@@ -37,6 +37,8 @@ RUN slcli config init --lang go --token ${SEALIGHTS_TOKEN}
 RUN slcli config create-bsid --app integration-service --branch sealights --build integration_service_$(date +'%y%m%d.%H%M')
 RUN slcli scan --bsid buildSessionId.txt --path-to-scanner /usr/local/bin/slgoagent --workspacepath ./ --scm none
 
+RUN echo "hello world"
+
 # Build
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o manager cmd/main.go \
  && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o snapshotgc cmd/snapshotgc/snapshotgc.go
