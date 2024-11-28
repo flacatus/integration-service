@@ -35,7 +35,7 @@ RUN curl -sSL ${AGENT_URL_SLCI} | tar -xz -C /usr/local/bin/
 
 RUN slcli config init --lang go --token ${SEALIGHTS_TOKEN}
 RUN slcli config create-bsid --app integration-service --branch sealights --build integration_service_$(date +'%y%m%d.%H%M')
-RUN slcli scan --bsid buildSessionId.txt --path-to-scanner /usr/local/bin/slgoagent --workspacepath ./ --scm git
+RUN slcli scan --bsid buildSessionId.txt --path-to-scanner /usr/local/bin/slgoagent --workspacepath ./ --scm none
 
 # Build
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o manager cmd/main.go \
@@ -43,7 +43,6 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o manager cmd/main.go \
 
 ARG ENABLE_WEBHOOKS=true
 ENV ENABLE_WEBHOOKS=${ENABLE_WEBHOOKS}
-
 
 # Use ubi-minimal as minimal base image to package the manager binary
 # Refer to https://catalog.redhat.com/software/containers/ubi9/ubi-minimal/615bd9b4075b022acc111bf5 for more details
