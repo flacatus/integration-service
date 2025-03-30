@@ -1,6 +1,8 @@
 module github.com/konflux-ci/integration-service
 
-go 1.21
+go 1.23
+
+toolchain go1.23.7
 
 require (
 	github.com/agiledragon/gomonkey/v2 v2.12.0
@@ -65,7 +67,7 @@ require (
 	github.com/google/go-github/v62 v62.0.0 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
-	github.com/google/pprof v0.0.0-20240424215950-a892ee059fd6 // indirect
+	github.com/google/pprof v0.0.0-20250317173921-a4b03ec1a45e // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.20.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
