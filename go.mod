@@ -1,6 +1,8 @@
 module github.com/konflux-ci/integration-service
 
-go 1.21
+go 1.22
+
+toolchain go1.22.9
 
 require (
 	github.com/agiledragon/gomonkey/v2 v2.12.0
@@ -21,7 +23,7 @@ require (
 	github.com/xanzy/go-gitlab v0.109.0
 	go.uber.org/mock v0.4.0
 	go.uber.org/zap v1.27.0
-	golang.org/x/exp v0.0.0-20240325151524-a685a6edb6d8
+	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842
 	golang.org/x/oauth2 v0.21.0
 	k8s.io/api v0.29.4
 	k8s.io/apimachinery v0.29.4
@@ -38,7 +40,7 @@ replace k8s.io/client-go => k8s.io/client-go v0.29.4
 require (
 	contrib.go.opencensus.io/exporter/ocagent v0.7.1-0.20200907061046-05415f1de66d // indirect
 	contrib.go.opencensus.io/exporter/prometheus v0.4.2 // indirect
-	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
+	github.com/antlr4-go/antlr/v4 v4.13.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/blendle/zapdriver v1.3.1 // indirect
 	github.com/census-instrumentation/opencensus-proto v0.4.1 // indirect
