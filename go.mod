@@ -16,7 +16,7 @@ require (
 	github.com/openshift-pipelines/pipelines-as-code v0.27.2
 	github.com/prometheus/client_golang v1.19.1
 	github.com/santhosh-tekuri/jsonschema/v5 v5.3.1
-	github.com/tektoncd/pipeline v0.60.2
+	github.com/tektoncd/pipeline v0.70.0
 	github.com/tonglil/buflogr v1.1.1
 	github.com/xanzy/go-gitlab v0.109.0
 	go.uber.org/mock v0.4.0
