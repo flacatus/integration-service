@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/agiledragon/gomonkey/v2 v2.12.0
 	github.com/bradleyfalzon/ghinstallation/v2 v2.11.0
-	github.com/go-logr/logr v1.4.2
+	github.com/go-logr/logr v1.4.3
 	github.com/google/go-containerregistry v0.20.1
 	github.com/google/go-github/v45 v45.2.0
 	github.com/konflux-ci/application-api v0.0.0-20240812090716-e7eb2ecfb409
