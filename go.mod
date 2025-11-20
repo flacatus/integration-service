@@ -20,7 +20,7 @@ require (
 	github.com/tonglil/buflogr v1.1.1
 	github.com/xanzy/go-gitlab v0.109.0
 	go.uber.org/mock v0.4.0
-	go.uber.org/zap v1.27.0
+	go.uber.org/zap v1.27.1
 	golang.org/x/exp v0.0.0-20240325151524-a685a6edb6d8
 	golang.org/x/oauth2 v0.21.0
 	k8s.io/api v0.29.4
