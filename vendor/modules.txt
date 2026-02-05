@@ -174,7 +174,7 @@ github.com/josharian/intern
 # github.com/json-iterator/go v1.1.12
 ## explicit; go 1.12
 github.com/json-iterator/go
-# github.com/konflux-ci/application-api v0.0.0-20240812090716-e7eb2ecfb409
+# github.com/konflux-ci/application-api v0.0.0-20260205151641-c691ffebedf8
 ## explicit; go 1.19
 github.com/konflux-ci/application-api/api/v1alpha1
 # github.com/konflux-ci/operator-toolkit v0.0.0-20240402130556-ef6dcbeca69d

@@ -8,7 +8,7 @@ require (
 	github.com/go-logr/logr v1.4.2
 	github.com/google/go-containerregistry v0.20.1
 	github.com/google/go-github/v45 v45.2.0
-	github.com/konflux-ci/application-api v0.0.0-20240812090716-e7eb2ecfb409
+	github.com/konflux-ci/application-api v0.0.0-20260205151641-c691ffebedf8
 	github.com/konflux-ci/operator-toolkit v0.0.0-20240402130556-ef6dcbeca69d
 	github.com/konflux-ci/release-service v0.0.0-20240514150425-d25d533f66ba
 	github.com/onsi/ginkgo/v2 v2.19.1
