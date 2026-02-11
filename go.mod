@@ -1,6 +1,6 @@
 module github.com/konflux-ci/integration-service
 
-go 1.21
+go 1.23
 
 require (
 	github.com/agiledragon/gomonkey/v2 v2.12.0
@@ -27,7 +27,7 @@ require (
 	k8s.io/apimachinery v0.29.4
 	k8s.io/client-go v1.5.2
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/utils v0.0.0-20240310230437-4693a0247e57
+	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
 	knative.dev/pkg v0.0.0-20240404013351-5d4af76051e4
 	sigs.k8s.io/controller-runtime v0.17.5
 )
