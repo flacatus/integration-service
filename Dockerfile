@@ -1,5 +1,5 @@
 # Build the manager binary
-FROM registry.access.redhat.com/ubi9/go-toolset:1.21.13-2.1729776560 as builder
+FROM registry.access.redhat.com/ubi9/go-toolset:1.25.7-1771417345 as builder
 
 ENV SEALIGHTS_TOKEN="eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL1BST0QtUkVESEFULmF1dGguc2VhbGlnaHRzLmlvLyIsImp3dGlkIjoiUFJPRC1SRURIQVQsbmVlZFRvUmVtb3ZlLEFQSUdXLTgzMDMzZmM0LWZkMzMtNDUzNy1hOWVkLTEwNzUzZWZiZTg4NiwxNzMyNjM3NTQ5NTc5Iiwic3ViamVjdCI6InJlZGhhdEBhZ2VudCIsImF1ZGllbmNlIjpbImFnZW50cyJdLCJ4LXNsLXJvbGUiOiJhZ2VudCIsIngtc2wtc2VydmVyIjoiaHR0cHM6Ly9yZWRoYXQuc2VhbGlnaHRzLmNvL2FwaSIsInNsX2ltcGVyX3N1YmplY3QiOiIiLCJpYXQiOjE3MzI2Mzc1NDl9.FoY3KQXz8zSs9eiIssRV3aEjPZmyFzSm5QUIj8jpMTEXqUS2b551VHaaYF_6I5ap0suwGdmiDhDQXWhGnEnYZ1hcH33b8YFEWyU7sYWgsnPUbfmG6xcFeyeQyOU4-I3lmX2Uza21o0kNfL0rVTaOxc8pIILySRDOnOTN6-KrpOM6QH1-1eggVwjTMlGGVV8xjKManeHECoJDWgjyUTt8T39G9R62gjKxTQz7Fjgql9aFWMQC7kSwlF48OUFpTXmC3YWjor4TRo-Fi13hHUTuUSZJVH61W04lzu1q10ZPOz_ohE6IH-eZtHW7iSHHW_9h7X9989CrxjGZ8j0EzV2a_WkfoC5J92rHcQT3UKfWol8aT8mBIIKfeyveln73IjBh4UtoWceN6OrwSNdvF7TsPcIvSbiMYKIMjI7veKqV4-1Z1mUQI2YGXuwFuz7WRf32G7cC733T7URuDacmAy3-8K4qBoli1ZmFpbyGZBr05LFslI79UWzKT2fyOfkD2HYH2xv566aWWERg0PXTieuv724bfwbdzp8hrXcrVcL78COKcqNyio7TM_ca6-vNq7FUWpW4nx6UrJybHcuBGpGV6tiNLYgN1kcynvly98bXwtwm5AInBPU60Ybn6TitWP7qHZ5Ku9uXiZRnT0jG4Gr4WikfSyT50sTgozwoJ8_Y0EI" \
     AGENT_URL='https://agents.sealights.co/slgoagent/latest/slgoagent-linux-amd64.tar.gz' \
@@ -48,7 +48,7 @@ ENV ENABLE_WEBHOOKS=${ENABLE_WEBHOOKS}
 
 # Use ubi-minimal as minimal base image to package the manager binary
 # Refer to https://catalog.redhat.com/software/containers/ubi9/ubi-minimal/615bd9b4075b022acc111bf5 for more details
-FROM registry.access.redhat.com/ubi9/ubi-minimal:9.4-1227.1726694542
+FROM registry.access.redhat.com/ubi9/ubi-minimal:9.7-1771346502
 COPY --from=builder /opt/app-root/src/manager /
 COPY --from=builder /opt/app-root/src/snapshotgc /
 
