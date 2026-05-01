@@ -25,7 +25,7 @@ require (
 	golang.org/x/oauth2 v0.21.0
 	k8s.io/api v0.29.4
 	k8s.io/apimachinery v0.29.4
-	k8s.io/client-go v1.5.2
+	k8s.io/client-go v11.0.0+incompatible
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/utils v0.0.0-20240310230437-4693a0247e57
 	knative.dev/pkg v0.0.0-20240404013351-5d4af76051e4
