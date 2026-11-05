@@ -8,8 +8,8 @@ require (
 	github.com/go-logr/logr v1.4.2
 	github.com/google/go-containerregistry v0.20.1
 	github.com/google/go-github/v45 v45.2.0
-	github.com/konflux-ci/application-api v0.0.0-20240812090716-e7eb2ecfb409
-	github.com/konflux-ci/operator-toolkit v0.0.0-20240402130556-ef6dcbeca69d
+	github.com/konflux-ci/application-api v0.0.0-20261101085949-41d2a0ab82ca
+	github.com/konflux-ci/operator-toolkit v0.0.0-20260921214948-0f252ff98994
 	github.com/konflux-ci/release-service v0.0.0-20240514150425-d25d533f66ba
 	github.com/onsi/ginkgo/v2 v2.19.1
 	github.com/onsi/gomega v1.34.0
@@ -21,13 +21,13 @@ require (
 	github.com/xanzy/go-gitlab v0.109.0
 	go.uber.org/mock v0.4.0
 	go.uber.org/zap v1.27.0
-	golang.org/x/exp v0.0.0-20240325151524-a685a6edb6d8
+	golang.org/x/exp v0.0.0-20261014143641-f0251eb4aa3e
 	golang.org/x/oauth2 v0.21.0
 	k8s.io/api v0.29.4
 	k8s.io/apimachinery v0.29.4
 	k8s.io/client-go v1.5.2
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/utils v0.0.0-20240310230437-4693a0247e57
+	k8s.io/utils v0.0.0-20261023123148-ca04ba58ecab
 	knative.dev/pkg v0.0.0-20240404013351-5d4af76051e4
 	sigs.k8s.io/controller-runtime v0.17.5
 )
@@ -36,7 +36,7 @@ require (
 replace k8s.io/client-go => k8s.io/client-go v0.29.4
 
 require (
-	contrib.go.opencensus.io/exporter/ocagent v0.7.1-0.20200907061046-05415f1de66d // indirect
+	contrib.go.opencensus.io/exporter/ocagent 7399e0f8ee5e // indirect
 	contrib.go.opencensus.io/exporter/prometheus v0.4.2 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -57,7 +57,7 @@ require (
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.1 // indirect
-	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
+	github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/cel-go v0.20.1 // indirect
 	github.com/google/gnostic-models v0.6.9-0.20230804172637-c7be7c783f49 // indirect
@@ -110,7 +110,7 @@ require (
 	k8s.io/apiextensions-apiserver v0.29.3 // indirect
 	k8s.io/component-base v0.29.3 // indirect
 	k8s.io/kube-openapi v0.0.0-20240403164606-bc84c2ddaf99 // indirect
-	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
+	sigs.k8s.io/json v0.0.0-20260909141634-11ed52e25bc5 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
